@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Kamil Khan is a computer architect working on memory systems, machine learning systems, and reinforcement learning for hardware design."
+      content="Kamil Khan works on LLM and ML systems, workload characterization, performance modeling, and reinforcement learning for systems optimization."
     />
     <meta name="theme-color" content="#f7f8fa" />
     <link rel="canonical" href="https://kamilkhan52.github.io/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Kamil Khan — Computer Architecture &amp; ML Systems</title>
+    <title>Kamil Khan — ML Systems &amp; Workload Modeling</title>
   </head>
 
   <body>
@@ -22,7 +22,7 @@
         <a class="wordmark" href="#top" aria-label="Kamil Khan, home">KK</a>
 
         <div class="identity-copy">
-          <p class="eyebrow">Computer architecture · ML systems</p>
+          <p class="eyebrow">ML systems · workload modeling · RL</p>
           <h1 id="top">Kamil Khan</h1>
           <p class="role">System Architect<br />Memory Innovation, Micron</p>
           <p class="location">Folsom, California</p>
@@ -47,14 +47,14 @@
         <section class="intro" aria-labelledby="intro-heading">
           <p class="eyebrow" id="intro-heading">About</p>
           <p class="lede">
-            I work on <strong>memory systems and computer architecture for AI</strong>. At Micron,
-            I study memory architectures for large language model training and inference. My
-            doctoral research at Colorado State University explores how reinforcement learning can
-            improve scheduling, routing, and memory management.
+            I build and study <strong>ML systems through workload characterization, performance
+            modeling, and learning-based optimization</strong>.
           </p>
           <p class="intro-note">
-            I am a PhD student in Computer Engineering at Colorado State University, advised by
-            <a href="https://www.engr.colostate.edu/~sudeep/">Prof. Sudeep Pasricha</a>.
+            At Micron, I study how large-model training and inference interact with memory systems.
+            My doctoral research at Colorado State University, advised by
+            <a href="https://www.engr.colostate.edu/~sudeep/">Prof. Sudeep Pasricha</a>, uses
+            reinforcement learning to improve scheduling and resource management across the stack.
           </p>
         </section>
 
@@ -66,24 +66,24 @@
 
           <div class="research-grid">
             <article>
-              <h3>Memory systems for AI</h3>
+              <h3>LLM &amp; ML systems</h3>
               <p>
-                DRAM and HBM architecture, memory hierarchy, and the performance and cost tradeoffs
-                that shape large-model training and inference.
+                Training and inference pipelines, serving schedulers, KV-cache management, and the
+                memory and communication bottlenecks that shape distributed AI systems.
+              </p>
+            </article>
+            <article>
+              <h3>Workload characterization</h3>
+              <p>
+                Measurement, simulation, and performance models that connect application behavior
+                to GPU, memory, storage, and interconnect design decisions.
               </p>
             </article>
             <article>
               <h3>Learning-based optimization</h3>
               <p>
-                Reinforcement learning for LLM serving, disaggregated memory, on-chip routing, and
-                adaptive resource management.
-              </p>
-            </article>
-            <article>
-              <h3>Architecture modeling</h3>
-              <p>
-                Simulation and performance analysis across processors, memory, interconnects, and
-                distributed AI systems.
+                Reinforcement learning and guided search for scheduling, resource management, and
+                hardware–software co-design.
               </p>
             </article>
           </div>
@@ -96,33 +96,14 @@
           </div>
 
           <p class="projects-intro">
-            My current work connects decisions across the AI systems stack, from DRAM timing and
-            disaggregated memory fabrics to request scheduling in LLM serving systems.
+            My current work starts with the workload: model its behavior, identify the system
+            bottleneck, and then search for better scheduling or architecture decisions.
           </p>
 
           <div class="project-list">
             <article>
               <div class="project-meta">
-                <p>CXL systems</p>
-                <p>Manuscript under revision</p>
-              </div>
-              <div>
-                <h3>CORMEM</h3>
-                <p>
-                  CORMEM studies how to coordinate data placement and movement across CXL
-                  disaggregated-memory fabrics. Each request creates two linked decisions: which
-                  memory endpoint should serve it and which fabric path should carry it. The
-                  framework adapts Q-routing so learned costs reflect both network and memory
-                  latency, allowing routing and allocation to respond together. Simulations across
-                  heterogeneous memory, varied workloads, and increasing fabric scales show
-                  promising improvements in execution time, latency, and fairness.
-                </p>
-              </div>
-            </article>
-
-            <article>
-              <div class="project-meta">
-                <p>LLM serving</p>
+                <p>LLM serving systems</p>
                 <p>Tail-aware design stage</p>
               </div>
               <div>
@@ -140,7 +121,7 @@
 
             <article>
               <div class="project-meta">
-                <p>Memory characterization</p>
+                <p>Workload characterization</p>
                 <p>Baseline complete</p>
               </div>
               <div>
@@ -157,6 +138,16 @@
               </div>
             </article>
           </div>
+
+          <aside class="related-work" aria-labelledby="related-work-heading">
+            <p class="eyebrow">Related systems work</p>
+            <h3 id="related-work-heading">Disaggregated memory for AI</h3>
+            <p>
+              I also study how pooled memory can expand capacity for AI workloads, including
+              KV-cache placement and offloading. CORMEM contributes a learning-based foundation for
+              coordinating network paths and memory endpoints in CXL fabrics.
+            </p>
+          </aside>
         </section>
 
         <section id="publications" aria-labelledby="publications-heading">
@@ -251,9 +242,10 @@
               <div>
                 <h3>System Architect, Memory Innovation</h3>
                 <p>
-                  Evaluating 3D DRAM and HBM for LLM workloads, and using learning-guided methods
-                  to explore memory architectures and scheduling policies. Previously worked on
-                  CXL product architecture and large-model training configurations at Micron.
+                  Characterizing memory behavior in large-model training and inference, modeling
+                  3D DRAM and HBM tradeoffs, and using learning-guided methods to explore memory
+                  architectures and schedulers. Earlier work at Micron covered large-model training
+                  configurations and CXL memory systems.
                 </p>
               </div>
             </article>
@@ -266,9 +258,10 @@
               <div>
                 <h3>Graduate Research Assistant</h3>
                 <p>
-                  Developing reinforcement-learning systems for inference scheduling, CXL fabrics,
-                  and on-chip routing, buffering, and energy management; building simulation
-                  infrastructure used across research projects.
+                  Developing reinforcement-learning systems for LLM inference scheduling and
+                  computer-architecture optimization; building workload models and simulation
+                  infrastructure across GPUs, memory, and interconnects. Related work studies
+                  disaggregated-memory fabrics.
                 </p>
               </div>
             </article>
@@ -318,8 +311,8 @@
           <p class="eyebrow">Contact</p>
           <h2 id="contact-heading">Let’s compare notes.</h2>
           <p>
-            I’m interested in conversations about memory systems, ML infrastructure, and
-            hardware–software co-design.
+            I’m interested in conversations about LLM systems, workload characterization,
+            performance modeling, reinforcement learning, and hardware–software co-design.
           </p>
           <a class="email-link" href="mailto:kamilkhan52@outlook.com">kamilkhan52@outlook.com</a>
         </section>

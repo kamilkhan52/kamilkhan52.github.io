@@ -313,6 +313,30 @@ section {
   text-transform: uppercase;
 }
 
+.related-work {
+  margin: 2.5rem 0 0 11.25rem;
+  padding: 1.4rem 1.5rem 1.5rem;
+  border-left: 2px solid #9bbbd2;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.related-work .eyebrow {
+  margin-bottom: 0.5rem;
+  font-size: 0.68rem;
+}
+
+.related-work h3 {
+  margin-bottom: 0.45rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.related-work p:last-child {
+  margin-bottom: 0;
+  color: #4f5b69;
+  font-size: 0.88rem;
+}
+
 .publications {
   margin: 0;
   padding: 0;
@@ -577,6 +601,10 @@ footer p {
 
   .project-meta p {
     margin-bottom: 0;
+  }
+
+  .related-work {
+    margin-left: 0;
   }
 
   .timeline article {
