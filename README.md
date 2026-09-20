@@ -12,6 +12,7 @@ automatically from the repository root.
 
 - `index.html` — page content and metadata
 - `styles.css` — responsive layout and visual design
+- `assets/kamil-khan.jpeg` — profile portrait
 - `assets/favicon.svg` — site icon
 
 The live site is <https://kamilkhan52.github.io/>.
