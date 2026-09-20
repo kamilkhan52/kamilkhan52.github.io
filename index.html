@@ -30,6 +30,7 @@
 
         <nav class="section-nav" aria-label="Sections">
           <a href="#research">Research</a>
+          <a href="#projects">Current projects</a>
           <a href="#publications">Publications</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
@@ -88,9 +89,79 @@
           </div>
         </section>
 
-        <section id="publications" aria-labelledby="publications-heading">
+        <section id="projects" aria-labelledby="projects-heading">
           <div class="section-heading">
             <p class="section-number" aria-hidden="true">02</p>
+            <h2 id="projects-heading">Current projects</h2>
+          </div>
+
+          <p class="projects-intro">
+            My current work connects decisions across the AI systems stack, from DRAM timing and
+            disaggregated memory fabrics to request scheduling in LLM serving systems.
+          </p>
+
+          <div class="project-list">
+            <article>
+              <div class="project-meta">
+                <p>CXL systems</p>
+                <p>Manuscript under revision</p>
+              </div>
+              <div>
+                <h3>CORMEM</h3>
+                <p>
+                  CORMEM studies how to coordinate data placement and movement across CXL
+                  disaggregated-memory fabrics. Each request creates two linked decisions: which
+                  memory endpoint should serve it and which fabric path should carry it. The
+                  framework adapts Q-routing so learned costs reflect both network and memory
+                  latency, allowing routing and allocation to respond together. Simulations across
+                  heterogeneous memory, varied workloads, and increasing fabric scales show
+                  promising improvements in execution time, latency, and fairness.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <div class="project-meta">
+                <p>LLM serving</p>
+                <p>Tail-aware design stage</p>
+              </div>
+              <div>
+                <h3>Vidur-RL</h3>
+                <p>
+                  Vidur-RL investigates reinforcement-learning schedulers for large-language-model
+                  inference. The project asks how a global scheduler can balance queue pressure,
+                  cache locality, and replica load while protecting user-facing tail latency.
+                  Current work focuses on queue-aware state and bounded per-request rewards,
+                  evaluated on P99 end-to-end latency, time to first token, and time per output
+                  token against strong scheduling heuristics.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <div class="project-meta">
+                <p>Memory characterization</p>
+                <p>Baseline complete</p>
+              </div>
+              <div>
+                <h3>DRAM for ML inference</h3>
+                <p>
+                  This project studies how low-level DRAM timing choices shape the latency and
+                  throughput of LLM inference. It couples cycle-accurate HBM simulation with
+                  system-level serving models, translating device-level bandwidth changes into
+                  time-to-first-token, time-per-output-token, inter-token latency, and throughput.
+                  A completed baseline identifies row-activation-to-read delay as the strongest
+                  influence among four parameters tested; the next study targets larger models,
+                  batching, disaggregated prefill and decode, and power-performance tradeoffs.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="publications" aria-labelledby="publications-heading">
+          <div class="section-heading">
+            <p class="section-number" aria-hidden="true">03</p>
             <h2 id="publications-heading">Selected publications</h2>
           </div>
 
@@ -167,7 +238,7 @@
 
         <section id="experience" aria-labelledby="experience-heading">
           <div class="section-heading">
-            <p class="section-number" aria-hidden="true">03</p>
+            <p class="section-number" aria-hidden="true">04</p>
             <h2 id="experience-heading">Experience</h2>
           </div>
 
@@ -225,7 +296,7 @@
 
         <section id="education" aria-labelledby="education-heading">
           <div class="section-heading">
-            <p class="section-number" aria-hidden="true">04</p>
+            <p class="section-number" aria-hidden="true">05</p>
             <h2 id="education-heading">Education</h2>
           </div>
 
